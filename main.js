@@ -1,7 +1,7 @@
 import './style.css';
-import * as THREE from 'https://unpkg.com/three@0.146.0/build/three.module.js'; 
-import { GLTFLoader } from 'https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js';
-// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import * as THREE from 'three'; 
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 
 // Setup
 
@@ -229,46 +229,29 @@ function scrollActive(){
 }
 window.addEventListener('scroll', scrollActive)
 
-// document.querySelector('button').addEventListener('click', (e)=>{
-//   e.preventDefault();
-//   const contactForm = document.querySelector('#form');
-//   const name = document.querySelector('[name="name"]');
-//   const email = document.querySelector('[name="email"]');
-//   const message = document.querySelector('[name="content"]');
-//   // validation before sending the data
-//   if(name.value.length===0 || name.value.length===0 || name.value.length===0){
-//     alert('please fill the inputs')
-//   }else{
-//     let data = new FormData(contactForm);  
-//     fetch("yanika.dontong@gmail.com", { method: "POST", body: data });
-//     alert('Thank you. your form was submited');
-//     contactForm.reset()
-//   }
-// })
+// const scriptURL = 'https://script.google.com/macros/s/AKfycbymIU0k46GPF0RgDoslkqtsbNkW0WaI2pBdVdxUUgkUA89ALD_-LAUzttVnZVV_gA_qVw/exec'
+//     const form = document.forms['submit-to-google-sheet']
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwGnBw_HEQntHUA1VMGmcHUVYSk0VfFb7gm8analQMzNjjbTozUr9oLVsEnlyJUeOLn/exec'
-    const form = document.forms['submit-to-google-sheet']
+//     form.addEventListener('submit', e => {
+//       e.preventDefault()
+//       console.log(e)
+//       showLoadingIndicator()
+//       fetch(scriptURL, { mode: 'cors',method: 'POST', body: new FormData(form)})
+//         .then(response => showSuccessMessage(response))
+//         .catch(error => showErrorMessage(error))
+//     })
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      console.log(e)
-      showLoadingIndicator()
-      fetch(scriptURL, { mode: 'cors',method: 'POST', body: new FormData(form)})
-        .then(response => showSuccessMessage(response))
-        .catch(error => showErrorMessage(error))
-    })
+//     function showLoadingIndicator () {
+//     }
 
-    function showLoadingIndicator () {
-    }
+//     function showSuccessMessage (response) {
+//       console.log('Success!', response)
+//       setTimeout(() => {
+//       }, 500)
+//     }
 
-    function showSuccessMessage (response) {
-      console.log('Success!', response)
-      setTimeout(() => {
-      }, 500)
-    }
-
-    function showErrorMessage (error) {
-      console.error('Error!', error.message)
-      setTimeout(() => {
-      }, 500)
-    }
+//     function showErrorMessage (error) {
+//       console.error('Error!', error.message)
+//       setTimeout(() => {
+//       }, 500)
+//     }
