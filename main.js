@@ -14,7 +14,7 @@ const renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight*1.01);
+renderer.setSize(window.innerWidth, window.innerHeight*1.5);
 camera.position.setZ(30);
 camera.position.setX(-3); 
 
@@ -54,7 +54,7 @@ Array(600).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('stars-2179083_960_720 (1).jpg');
+const spaceTexture = new THREE.TextureLoabackder().load('stars-2179083_960_720 (1).jpg');
 scene.background = spaceTexture;
 
 function dumpObject(obj, lines = [], isLast = true, prefix = '') {
