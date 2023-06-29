@@ -28,12 +28,14 @@
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item"><a href="#background" class="nav__link">Background</a></li>
+                    <!-- <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li> -->
+                    <li class="nav__item"><a href="#about" class="nav__link active">About</a></li>
+                    <!-- <li class="nav__item"><a href="#background" class="nav__link">Background</a></li> -->
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#achieve" class="nav__link">Achievement</a></li>
+                    <li class="nav__item"><a href="#excursion" class="nav__link">Excursion</a></li>
+                    <li class="nav__item"><a href="#summerschool" class="nav__link" style="width: 120px;">Summer School</a></li>
                 </ul>
             </div>
           
@@ -45,7 +47,7 @@
     
     <main>
        <!-- ===== HOME =====  -->
-      <section class="home bd-grid" id="home">  
+      <section class="home bd-grid" >  
         <div class="home__container"> 
           <h1 class="home__title">Hello,<br>I'm 
             <span class="home__title-color">Parinda Pannoon</span>
@@ -76,35 +78,25 @@
         <div class="section_header">
           <p class="about_head">About Me</p>
         </div>
-          <div class="about_container">
-            <div class="info-section">
-              <div class="about_text">
-                My name is Parinda. I come from Thailand.
-                I am an open-minded and flexible person. 
-                I am really passionate about geoinformatics 
-                and always keen to up-skill myself by learning new things.
-                Currently, I am a master’s degree student
-                under Erasmus Mundus Copernicus Master’s 
-                in Digital Earth at University of Salzburg 
-                and Palacký University Olomouc, Czech Republic. 
-                I am in Geo-visualization and Geo-communication track. 
-              </div>
-              <div class="about_img_container">
-                <img src="307973074_549780023815483_8461132865242581018_n.jpg" class="background__imgabout1">
-                <img src="S__9576490.jpg" class="background__imgabout2">
-              </div>  
-          </div>
-        </div>
-      </section>
 
-      <!-- ===== BACKGROUND =====  -->
-      <section class="about section bd-grid" id="background">   
-        <!-- <h2 class="section-title">About Me</h2> -->
-        <div class="section_header">
-          <p class="bg_head">Background</p>
-        </div>
         <div class="bg__container">
           <div class="info-sectionbackgroundcu">
+            <div class="about_text">
+              My name is Parinda. I come from Thailand.
+              I am an open-minded and flexible person. 
+              I am really passionate about geoinformatics 
+              and always keen to up-skill myself by learning new things.
+              Currently, I am a master’s degree student
+              under Erasmus Mundus Copernicus Master’s 
+              in Digital Earth at University of Salzburg 
+              and Palacký University Olomouc, Czech Republic. 
+              I am in Geo-visualization and Geo-communication track. 
+            </div>
+            <div class="about_img_container">
+              <img src="307973074_549780023815483_8461132865242581018_n.jpg" class="background__imgabout1">
+              <img src="S__9576490.jpg" class="background__imgabout2">
+            </div>  
+            <hr style="width: 80%;">
             <h2 class="bg__title">Academic Background</h2>
             <div class="timeline_container">
               <ul class="timeline">
@@ -129,7 +121,7 @@
                 </li>
               </ul>
             </div>
-          <br>
+          <hr style="width: 80%;">
           <h2 class="bg__title">Professional Background</h2>
           <div class="timeline_container">
               <ul class="timeline">
@@ -263,6 +255,7 @@
           <p class="project_head">Projects</p>
         </div>
         <div class="projs__container">
+
           <a href="https://arcg.is/L4HWy0" target="_blank" class="card">
             <div class="card__img-container">
               <img class="card__img" src="Screenshot (605).png" alt="unsplash random image" />
@@ -438,13 +431,13 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
 
         </div>
       </section>
-    </section>
 
     <!-- ===== Achievement =====  -->
     <section class="proj section bd-grid" id="achieve">
       <div class="section_header">
         <p class="achieve_head">Achievement</p>
       </div>
+
       <div class="projs__container">
         <a href="https://devpost.com/software/ml4earth-hackathon-2022-parinda-yanika#updates" target="_blank" class="card">
           <div class="card__img-container">
@@ -467,8 +460,94 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
             <p class="card__cta">Read more</p>
           </div>
         </a>
+      </div>
+      </section>
+
+    <!-- ===== Excursion =====  -->
+    <section class="proj section bd-grid" id="excursion">
+      <div class="section_header">
+        <p class="excursion_head">Excursion</p>
+      </div>
+
+      <div class="projs__container">
+        <a href="https://devpost.com/software/ml4earth-hackathon-2022-parinda-yanika#updates" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="Screenshot (243).png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">Arcgis PRO</span>
+              <span class="card__tag">SVR Model</span>
+              <span class="card__tag">Remote sensing</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">ML4Earth Hackathon 2022</h3>
+            <h3 class="card__title">The winner, 3rd place</h3>
+            <h9 class="card__title">Future Lab, Technical University of Munich(TUM)</h9>
+            <p class="card__detail">
+              Topic : Crop yield prediction with remote sensing and machine learning and exploring relations with explainable AI.
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+      </div>
+
     </main>
 
+    <!-- ===== Summer School =====  -->
+    <section class="proj section bd-grid" id="summerschool">
+      <div class="section_header">
+        <p class="summerschool_head">Summer School</p>
+      </div>
+
+      <div class="projs__container">
+        <a href="https://devpost.com/software/ml4earth-hackathon-2022-parinda-yanika#updates" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="Screenshot (243).png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">Arcgis PRO</span>
+              <span class="card__tag">SVR Model</span>
+              <span class="card__tag">Remote sensing</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">ML4Earth Hackathon 2022</h3>
+            <h3 class="card__title">The winner, 3rd place</h3>
+            <h9 class="card__title">Future Lab, Technical University of Munich(TUM)</h9>
+            <p class="card__detail">
+              Topic : Crop yield prediction with remote sensing and machine learning and exploring relations with explainable AI.
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+
+        <a href="https://devpost.com/software/ml4earth-hackathon-2022-parinda-yanika#updates" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img" src="Screenshot (243).png" alt="unsplash random image" />
+            <div class="card__tags">
+              <span class="card__tag">Python</span>
+              <span class="card__tag">Arcgis PRO</span>
+              <span class="card__tag">SVR Model</span>
+              <span class="card__tag">Remote sensing</span>
+            </div>
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">ML4Earth Hackathon 2022</h3>
+            <h3 class="card__title">The winner, 3rd place</h3>
+            <h9 class="card__title">Future Lab, Technical University of Munich(TUM)</h9>
+            <p class="card__detail">
+              Topic : Crop yield prediction with remote sensing and machine learning and exploring relations with explainable AI.
+             
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+      </div>
+
+    </section>
+        <!-- ===== Footer =====  -->
     <footer id="contact">
       <div class="l-footer">
         <div class="message bd-grid">

@@ -135,7 +135,7 @@ blockquote p {
   font-weight: 800;
   text-decoration: none; 
   /* margin-right: 10%; */
-  width: 55%;
+  /* width: 30%; */
   align-items: flex-end;
 }
 
@@ -180,7 +180,7 @@ blockquote p {
 .nav__item {
   margin-left: var(--mb-6);
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .nav__link {
@@ -271,6 +271,20 @@ blockquote p {
 
 .achieve_head{
   width: 225px;
+  background: white;
+  padding-left: 19px;
+  border-radius: 25px;
+}
+
+.excursion_head{
+  width: 177px;
+  background: white;
+  padding-left: 19px;
+  border-radius: 25px;
+}
+
+.summerschool_head{
+  width: 270px;
   background: white;
   padding-left: 19px;
   border-radius: 25px;
@@ -424,8 +438,8 @@ margin: 10px;
   padding: 2rem;
   /* margin-top: 10vh; */
    width: 800px;
-  height: 420px;
-  width: 750px;
+  height: 800px;
+  /* width: 750px; */
   border-radius: 25px;
   opacity: 0.9;
 }
@@ -438,7 +452,7 @@ margin: 10px;
   margin-left: 20px;
   /* margin-top: 10vh; */
   /* width: 900px; */
-  height: 1400px;
+  height: 1800px;
   width: 900px;
   border-radius: 25px;
   opacity: 0.9;
@@ -617,7 +631,7 @@ margin: 10px;
 
 .skills__img {
   max-width: 171px;;
-  max-height: 135px;
+  max-height: 100px;
   /* height: 150px; */
 }
 
@@ -877,7 +891,7 @@ input,textarea {
     /* margin-left: 20px; */
     /* margin-top: 10vh; */
     /* width: 900px; */
-    height: 1400px;
+    height: 1880px;
     width: 700px;
     border-radius: 25px;
     opacity: 0.9;
@@ -1131,7 +1145,7 @@ input,textarea {
     padding: 2rem;
     margin-top: 5vh;
     margin-left: 0;
-    height: 1400px;
+    height: 1800px;
     width: 550px;
     border-radius: 25px;
     opacity: 0.9;
@@ -1331,7 +1345,7 @@ input,textarea {
     width: 300px;
     padding-top: 5px;
     margin-top: 1px;
-    height: 1500px;
+    height: 2050px;
   }
   .bg__title{
     padding-top: 20px;

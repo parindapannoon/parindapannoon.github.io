@@ -54,7 +54,7 @@ Array(600).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoabackder().load('stars-2179083_960_720 (1).jpg');
+const spaceTexture = new THREE.TextureLoader().load('stars-2179083_960_720 (1).jpg');
 scene.background = spaceTexture;
 
 function dumpObject(obj, lines = [], isLast = true, prefix = '') {
@@ -219,7 +219,7 @@ function scrollActive(){
       const sectionHeight = current.offsetHeight
       const sectionTop = current.offsetTop - 50;
       var sectionId = current.getAttribute('id')
-
+      
       if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
           document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
       }else{
