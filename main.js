@@ -1,7 +1,8 @@
-import './style.css';
-import * as THREE from 'three'; 
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+// import './style.css';
+import * as THREE from 'https://cdn.skypack.dev/three@0.129.0/build/three.module.js';
+// import { OrbitControls } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js';
+import { GLTFLoader } from 'https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js';
+
 
 // Setup
 
@@ -54,7 +55,7 @@ Array(600).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoabackder().load('stars-2179083_960_720 (1).jpg');
+const spaceTexture = new THREE.TextureLoader().load('stars-2179083_960_720 (1).jpg');
 scene.background = spaceTexture;
 
 function dumpObject(obj, lines = [], isLast = true, prefix = '') {
@@ -217,9 +218,9 @@ function scrollActive(){
 
   sections.forEach(current =>{
       const sectionHeight = current.offsetHeight
-      const sectionTop = current.offsetTop - 50;
+      const sectionTop = current.offsetTop - 400;
       var sectionId = current.getAttribute('id')
-
+      
       if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
           document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active')
       }else{
