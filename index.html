@@ -8,8 +8,12 @@
     <title>Parinda</title>
     <link rel = "icon" href = "logo.png" type = "image/x-icon">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" >
+    <link rel="stylesheet" type="text/css" href="./style.css" >
     <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
+    <!-- <script type="module" src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
+    <script type="module" src="https://unpkg.com/three@0.146.0/examples/jsm/loaders/GLTFLoader.js"></script> -->
+    <script type="module" src="./main.js"></script>
+
   </head>
 
   <body>
@@ -31,11 +35,12 @@
                     <!-- <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li> -->
                     <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
                     <!-- <li class="nav__item"><a href="#background" class="nav__link">Background</a></li> -->
+                    <li class="nav__item"><a href="#intern" class="nav__link">Internship</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
                     <li class="nav__item"><a href="#proj" class="nav__link">Projects</a></li>
                     <li class="nav__item"><a href="#achieve" class="nav__link">Achievement</a></li>
                     <li class="nav__item"><a href="#excursion" class="nav__link">Excursion</a></li>
-                    <li class="nav__item"><a href="#summerschool" class="nav__link" style="width: 120px;">Summer School</a></li>
+                    <!-- <li class="nav__item"><a href="#summerschool" class="nav__link" style="width: 120px;">Summer School</a></li> -->
                 </ul>
             </div>
           
@@ -100,19 +105,19 @@
             <h2 class="bg__title">Academic Background</h2>
             <div class="timeline_container">
               <ul class="timeline">
-                <li class="event" data-date="28/07/2016 – 08/06/2020 ">
+                <li class="event" data-date="07/2016 – 06/2020 ">
                   <div class="event_head">Bachelor's Degree</div>
                   <img src="logo_eng.jpeg" class="background__imgcu">
                   <p class="uni_title">Chulalongkorn University</p>
                   <p class="event_content">Bachelor of Arts, Faculty of Arts</p>
                 </li>
-                <li class="event" data-date="03/10/2022 - Current">
+                <li class="event" data-date=" 10/2022 - 07/2023">
                   <div class="event_head">Master’s Degree</div>
                   <h4 class="event_subhead">Copernicus Master’s in Digital Earth</h4>
                   <img src="1200px-Logo_der_Universität_Salzburg.jpg" class="background__imgsz">
                   <p class="uni_title">University of Salzburg</p>
                 </li>
-                <li class="event" data-date="Second year">
+                <li class="event" data-date=" 09/2023 - Current">
                   <div class="event_head">Master’s Degree</div>
                   <h4 class="event_subhead">Copernicus Master’s in Digital Earth</h4>
                   <img src="UP_logo_horizont_en.png" class="background__imgpl">
@@ -139,6 +144,36 @@
           </div>
         </div>
       </section>
+
+      <!-- ===== Internship =====  -->
+    <section class="proj section bd-grid" id="intern">
+      <div class="section_header">
+        <p class="intern_head">Internship</p>
+      </div>
+
+      <div class="projs__container">
+        <a href="./Internship Report_ParindaPannoon.pdf" style="height: 480px; padding-top: 0;" target="_blank" class="card">
+          <div class="card__img-container">
+            <img class="card__img intern" src="ubicube_logo.jpeg" alt="ubicube_logo" />
+            <!-- <div class="card__tags">
+              <span class="card__tag">AI</span>
+              <span class="card__tag">ML</span>
+              <span class="card__tag">DL</span>
+              <span class="card__tag">EO</span>
+              <span class="card__tag">Digital mindset</span>
+            </div> -->
+          </div>
+          <div class="card__body" style="height: 260px;">
+            <h3 class="card__title">Ubicube</h3><bhr>
+            <h9 class="card__title" style="font-size: 12px;">1 May 2023 to 31 July 2023.</h9>
+            <!-- <h9 class="card__title">Linz, Austria</h9> -->
+            <p class="card__detail">
+              I worked as a geospatial intern at Ubicube GmbH, Austria. Ubicube collects and analyzes multi-resolution satellite data to extract relevant information about properties with machine learning-driven processing. My main task was performing geospatial analysis including map visualizations and statistics. I was assigned to the projects building footprints extraction models using Machine learning and performing the analysis of flood hazard insights for properties and improving the quality of real estate valuations.
+            </p>
+            <p class="card__cta">Read more</p>
+          </div>
+        </a>
+      </div>
 
       <!-- ===== SKILLS =====  -->
       <section class="skills section bd-grid" id="skills">
@@ -497,7 +532,7 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
     </main>
 
     <!-- ===== Summer School =====  -->
-    <section class="proj section bd-grid" id="summerschool">
+    <!-- <section class="proj section bd-grid" id="summerschool">
       <div class="section_header">
         <p class="summerschool_head">Summer School</p>
       </div>
@@ -505,7 +540,7 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
       <div class="projs__container">
         <div href="" target="_blank" class="card">
           <img class="card__img" src="5229336.png" style="width: 280px; height: 60px; margin-top: 170px; margin-left: 10px;" alt="unsplash random image" />
-          <!-- <div class="card__img-container">
+           <div class="card__img-container">
             <img class="card__img" src="Screenshot (243).png" alt="unsplash random image" />
             <div class="card__tags">
               <span class="card__tag">Python</span>
@@ -522,12 +557,12 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
               Topic : Crop yield prediction with remote sensing and machine learning and exploring relations with explainable AI.
             </p>
             <p class="card__cta">Read more</p>
-          </div> -->
+          </div> 
         </div>
 
         <div href="" target="_blank" class="card">
           <img class="card__img" src="5229336.png" style="width: 280px; height: 60px; margin-top: 170px; margin-left: 10px;" alt="unsplash random image" />
-          <!-- <div class="card__img-container">
+          <div class="card__img-container">
             <img class="card__img" src="5229336.png" alt="unsplash random image" />
             <div class="card__tags">
               <span class="card__tag">Python</span>
@@ -544,12 +579,12 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
               Topic : Crop yield prediction with remote sensing and machine learning and exploring relations with explainable AI.
             </p>
             <p class="card__cta">Read more</p>
-          </div> -->
+          </div> 
         </div>
 
       </div>
 
-    </section>
+    </section> -->
         <!-- ===== Footer =====  -->
     <footer id="contact">
       <div class="l-footer">
@@ -598,8 +633,5 @@ the VIR (Band 3) and another one in the SWIR (Band 11).
       </div>
       </div>
     </footer>
-    <script type="module" src="main.js"></script>
-    <script src="https://unpkg.com/three@0.146.0/build/three.min.js"></script>
-    <script src="https://unpkg.com/three@0.146.0/examples/js/loaders/GLTFLoader.js"></script>
   </body>
 </html>
