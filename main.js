@@ -55,7 +55,7 @@ Array(600).fill().forEach(addStar);
 
 // Background
 
-const spaceTexture = new THREE.TextureLoader().load('stars-2179083_960_720 (1).jpg');
+const spaceTexture = new THREE.TextureLoader().load('./images/stars-2179083_960_720 (1).jpg');
 scene.background = spaceTexture;
 
 function dumpObject(obj, lines = [], isLast = true, prefix = '') {
@@ -135,7 +135,7 @@ window.addEventListener("hashchange", () => window.history.pushState({}, "", '/'
 
 // Earth
 
-const earthTexture = new THREE.TextureLoader().load('earth.jpg');
+const earthTexture = new THREE.TextureLoader().load('./images/earth.jpg');
 // const normalTexture = new THREE.TextureLoader().load('Earth.png');
 
 const earth = new THREE.Mesh(

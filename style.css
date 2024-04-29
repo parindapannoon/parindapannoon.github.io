@@ -460,7 +460,7 @@ margin: 10px;
   margin-left: 20px;
   /* margin-top: 10vh; */
   /* width: 900px; */
-  height: 1800px;
+  height: 1850px;
   width: 900px;
   border-radius: 25px;
   opacity: 0.9;
@@ -736,7 +736,10 @@ margin: 10px;
   object-fit: cover;
   margin-left: 65px;
 }
-
+.card__img_coming_soon{
+  width: 100%;
+  margin-top: 55px
+}
 .card__body {
   padding: 2px 20px 20px 20px;
   display: flex;
@@ -750,6 +753,13 @@ margin: 10px;
 .card__title {
   margin: 0;
   font-size: clamp(1.4rem, 4vw, 1.7rem);
+  text-transform: capitalize;
+  color: var(--clr-neutral-800);
+}
+
+.card__title__organized {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 1.5rem);
   text-transform: capitalize;
   color: var(--clr-neutral-800);
 }
