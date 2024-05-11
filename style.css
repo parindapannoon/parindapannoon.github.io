@@ -667,6 +667,20 @@ margin: 10px;
   align-content: stretch;
 }
 
+.card-l {
+  display: grid;
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: var(--clr-neutral-100);
+  overflow: hidden;
+  border-radius: 0.8em;
+  box-shadow: 0px 4px 3px rgb(0 0 0 / 10%);
+  transition: var(--transition);
+  margin-bottom: 30px;
+  align-content: stretch; 
+}
+
 .card:is(:hover, :focus) {
   transform: translateY(-5px);
   box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.1);
@@ -687,6 +701,7 @@ margin: 10px;
   isolation: isolate;
   aspect-ratio: 16 / 9;
 }
+
 /* image overlay */
 .card__img-container::before {
   content: "";
@@ -738,7 +753,8 @@ margin: 10px;
 }
 .card__img_coming_soon{
   width: 100%;
-  margin-top: 55px
+  margin-top: -3px;
+  margin-left: 30px;
 }
 .card__body {
   padding: 2px 20px 20px 20px;
